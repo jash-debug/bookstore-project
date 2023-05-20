@@ -1,23 +1,35 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuid } from 'uuid';
-import { addBooks } from '../redux/books/BooksSlice';
+import { addBook } from '../redux/books/BooksSlice';
 
 const AddBookForm = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const dispatch = useDispatch();
-
+  /* eslint-disable */
   const handleSubmit = (e) => {
     e.preventDefault();
-    const Id = uuid();
-    dispatch(addBooks({ title, author, Id }));
+    const item_id = uuid();
+    const category = '';
+    dispatch(
+      addBook({
+        title,
+        author,
+        item_id,
+        category,
+      }),
+    );
     setTitle('');
     setAuthor('');
   };
 
   return (
-    <form onSubmit={(e) => { handleSubmit(e); }}>
+    <form
+      onSubmit={(e) => {
+        handleSubmit(e);
+      }}
+    >
       <h2>Add Books</h2>
       <input
         type="text"
@@ -47,3 +59,4 @@ const AddBookForm = () => {
 };
 
 export default AddBookForm;
+

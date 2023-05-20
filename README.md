@@ -12,12 +12,14 @@
 - [📖 Bookstore ](#-bookstore-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
     - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -38,6 +40,15 @@
 - JavaScript
 - React
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[Connects with Api]**
+- **[Has Add and Delete functionality]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,6 +104,17 @@ Install this project with:
 - Twitter: [@twitterhandle](https://twitter.com/ahmed_najash)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ahmed-najash-286a671ab)
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Features I will add to the project.
+
+- [ ] **[Implement styling]**
+- [ ] **[Improve on categories]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

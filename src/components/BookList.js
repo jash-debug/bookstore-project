@@ -1,14 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import BookItem from './Book';
 
-const BookList = ({ allBooks }) => (
-  <div>
-    {allBooks.map((item) => (
-      <BookItem title={item.title} author={item.author} id={item.item_id} key={item.item_id} />
-    ))}
-  </div>
-);
+const BookList = ({ allBooks }) => {
+  const { books } = useSelector((state) => state.books);
+
+  return (
+    <div>
+      {
+
+    allBooks.map((item) => {
+      const element = books[item][0];
+      return (
+
+        <BookItem
+          title={element.title}
+          author={element.author}
+          id={item}
+          key={item}
+        />
+      );
+    })
+}
+    </div>
+  );
+};
 
 BookList.propTypes = {
   allBooks: PropTypes.arrayOf(PropTypes.shape({

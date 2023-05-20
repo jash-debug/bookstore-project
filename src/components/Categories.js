@@ -1,9 +1,6 @@
-function Categories() {
-  return (
-    <div className="categories">
-      <button type="button">CHECK STATUS</button>
-    </div>
-  );
-}
-
+const Categories = () => (
+  <div>
+    <p>This is the Categories</p>
+  </div>
+);
 export default Categories;

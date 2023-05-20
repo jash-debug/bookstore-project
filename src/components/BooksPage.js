@@ -1,20 +1,16 @@
 import React from 'react';
-import AddBook from './AddBook';
-import BooksList from './BookList';
+import { useSelector } from 'react-redux';
+import BookList from './BookList';
+import AddBookForm from './AddBook';
 
-const BooksPage = () => {
-  const list = [{
-    id: 1,
-    title: 'The hunger games',
-    author: 'Suzanne Collins',
-  },
-  ];
+const Books = () => {
+  const books = useSelector((state) => state.books);
   return (
-    <>
-      <BooksList booksList={list} />
-      <AddBook />
-    </>
+    <div>
+      <BookList allBooks={books.books} />
+      <AddBookForm />
+    </div>
+
   );
 };
-
-export default BooksPage;
+export default Books;
